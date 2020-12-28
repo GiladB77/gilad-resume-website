@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title>צור קשר</title>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <nav>
+                <a href="MyCV.html">
+                    <ul>דף הבית </ul>
+                </a> ||
+                <a href="AboutMy.html">
+                    <ul>אודות</ul>
+                </a> ||
+                <a href="ContactsUS.html">
+                    <ul>צור קשר</ul>
+                </a>
+                <div class="search">
+                    <form action="https://www.google.com/search" method="get" dir="ltr">
+                        <label>Search on google:</label>
+                        <input type="text" name="q" placeholder="חיפוש בגוגל" />
+                        <input type="submit" value="search.." />
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div>
+            <p>
+                <table border="1" cellpadding="25">
+                    <tr>
+                        <th>שם</th>
+                        <th>כתובת</th>
+                        <th>פלאפון</th>
+                        <th>דוא"ל</th>
+                    </tr>
+                    <tr>
+                        <td>גלעד ברהני</td>
+                        <td>טשרניחובסקי 40 ,רחובות</td>
+                        <td>050-5484672</td>
+                        <td>Gilad181920@gmail.com</td>
+                    </tr>
+                </table>
+            </p>
+            <br />
+        </div>
+
+        <img src="Pics/mail.gif" id="gif" />
+
+        <form action="mailto:Gilad181920@gamil.com" method="get">
+            <div>
+                <label for="fullName"> שם מלא:<br /></label>
+                <input type="text" id="fullName" name="fullName" required />
+                <br />
+                <label for="email"> אימייל:<br /></label>
+                <input type="email" id="email" pattern="+@gmail.com" required />
+                <br />
+                <label for="phone"> טלפון:<br /></label>
+                <input type="tel" id="phone" pattern="05[0-9]{1}-[0-9]{7}" required />
+                <br />
+                <br />
+                <label for="male"> זכר:</label>
+                <input type="radio" id="male" name="gender" required />
+                <label for="female"> נקבה:</label>
+                <input type="radio" id="female" name="gender" required />
+                <br />
+                <p>הודעה:<br /></p>
+                <textarea id="message" name="message" rows="6" cols="60" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" id="submit" value="שלח" class="buttonSend" />
+                <input type="reset" id="reset" value="איפוס" class="buttonReset" />
+            </div>
+        </form>
+
+        <br>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100000839388520" title="דף הפייסבוק שלי" target="_blank">
+                <span>Click here to go to Gilad's Facebook</span>
+                <img src="Pics/Facebook.png" id="facebookPic" />
+            </a>
+        </div>
+        <br />
+        <div>
+            <a href="tel:050-5484672" title="מספר הנייד שלי">
+                <span style="color:blue">חייג עכשיו</span> 050-5484672
+            </a>
+        </div>
+        <br />
+        <footer>
+            <nav>
+                <a href="MyCV.html">
+                    <ul>דף הבית </ul>
+                </a> ||
+                <a href="AboutMy.html">
+                    <ul>אודות</ul>
+                </a> ||
+                <a href="ContactsUS.html">
+                    <ul>צור קשר</ul>
+                </a>
+            </nav>
+        </footer>
+        <p class="clear"></p>
+
+    </div>
+</body>
+
+</html>
